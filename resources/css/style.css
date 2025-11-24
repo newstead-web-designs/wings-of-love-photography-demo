@@ -108,6 +108,31 @@ a:focus-visible {
 /* =======================
    Buttons
    ======================= */
+.btn {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-heading);
+  transition: all var(--transition-default);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
+  transform: scale(1.02);
+}
+
+.btn:active {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
+
+.btn.btn-sm {
+  font-size: var(--font-size-h5);
+}
+
+.btn.btn-lg {
+  font-size: var(--font-size-h3);
+}
+
 .btn.btn-primary {
   background-color: var(--color-text-secondary);
   border: 2px solid var(--color-text-secondary);
@@ -255,15 +280,14 @@ a:focus-visible {
    ============================== */
 .hero {
   position: relative;
-  background-image: url('../images/hero.jpg');
-  /* Photo by Callie Morgan on Unsplash */
+  background-image: url('../images/hero.jpg'); /* Photo by Callie Morgan on Unsplash */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 120vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -335,7 +359,7 @@ a:focus-visible {
 /* =======================
    Carousel
    ======================= */
- .carousel-item {
+.carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,7 +445,8 @@ input[type="textarea"]:focus-visible,
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('../images/summary.jpg'); /* Photo by Foto Pettine on Unsplash */
+  background-image: url('../images/summary.jpg');
+  /* Photo by Foto Pettine on Unsplash */
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
