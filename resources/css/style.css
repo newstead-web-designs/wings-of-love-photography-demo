@@ -180,15 +180,6 @@ a:focus-visible {
 
 .logo {
   height: 75px;
-  /* default for small screens */
-}
-
-@media (min-width: 992px) {
-
-  /* large screens and up */
-  .logo {
-    height: 100px;
-  }
 }
 
 .navbar {
