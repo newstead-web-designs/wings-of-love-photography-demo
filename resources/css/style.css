@@ -37,7 +37,7 @@
   --color-bg-tertiary: #fffcf6;
   --color-overlay-primary: rgba(249, 246, 240, 0.4);
   /* #f9f6f0;  */
-  --color-overlay-secondary: rgba(255, 252, 246, 0.5);
+  --color-overlay-secondary: rgba(255, 252, 246, 0.6);
   /* #fffcf6;  */
   --color-accent-primary: #9e4f56;
   --color-accent-secondary: #4c6d99;
@@ -276,6 +276,7 @@ a:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 100vh;
   text-align: center;
 }
@@ -431,12 +432,13 @@ input[type="textarea"]:focus-visible,
    ======================= */
 .summary {
   position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-size: cover;
+   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 .summary::before {
@@ -446,6 +448,7 @@ input[type="textarea"]:focus-visible,
   left: 0;
   width: 100%;
   height: 100%;
+  filter: blur(8px); 
   background-color: var(--color-overlay-secondary);
   z-index: 0;
 }
