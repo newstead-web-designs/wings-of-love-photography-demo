@@ -438,7 +438,7 @@ input[type="textarea"]:focus-visible,
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 50vh;
+  height: 50vh;
   text-align: center;
 }
 
