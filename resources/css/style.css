@@ -35,7 +35,7 @@
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f9f6f0;
   --color-bg-tertiary: #fffcf6;
-  --color-overlay-primary: rgba(249, 246, 240, 0.2);
+  --color-overlay-primary: rgba(249, 246, 240, 0.4);
   /* #f9f6f0;  */
   --color-overlay-secondary: rgba(255, 252, 246, 0.5);
   /* #fffcf6;  */
@@ -272,7 +272,6 @@ a:focus-visible {
 .hero {
   position: relative;
   background-size: cover;
-  background-position: top;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -436,7 +435,6 @@ input[type="textarea"]:focus-visible,
   display: flex;
   align-items: center;
   background-size: cover;
-  background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
 }
