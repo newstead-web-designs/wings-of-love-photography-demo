@@ -30,9 +30,8 @@
   --color-bg-tertiary: #fffcf6;
   --color-overlay-primary: rgba(249, 246, 240, 0.4); /* #f9f6f0;  */
   --color-overlay-secondary: rgba(255, 252, 246, 0.6); /* #fffcf6;  */
-  --color-accent-primary: #9e4f56;
-  --color-accent-secondary: #4c6d99;
-  ;
+  --color-accent: #9e4f56;
+  --color-active: #7a5f62;
 }
 
 /* =======================
@@ -88,7 +87,7 @@ a:hover,
 a:focus,
 a:focus-visible,
 a:active {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
 }
 
 a:focus-visible {
@@ -135,13 +134,13 @@ a:focus-visible {
 .btn.btn-primary:focus,
 .btn.btn-primary:focus-visible,
 .btn.btn-primary:active {
-  background-color: var(--color-accent-primary);
-  border: 2px solid var(--color-accent-primary);
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .btn.btn-primary:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 .btn.btn-secondary {
@@ -155,8 +154,8 @@ a:focus-visible {
 .btn.btn-secondary:focus,
 .btn.btn-secondary:focus-visible,
 .btn.btn-secondary:active {
-  background-color: var(--color-accent-primary);
-  border: 2px solid var(--color-accent-primary);
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
   color: var(--color-text-primary);
 }
 
@@ -181,7 +180,7 @@ a:focus-visible {
 
 .navbar-brand:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 .navbar-nav .nav-link {
@@ -190,17 +189,21 @@ a:focus-visible {
   transition: all var(--transition-default);
 }
 
+.navbar-nav .nav-link.active {
+  color: var(--color-active);
+}
+
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:focus-visible,
 .navbar-nav .nav-link:active {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
 }
 
 .navbar-nav .nav-link:focus-visible {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 .nav-item.dropdown .dropdown-toggle {
@@ -211,13 +214,14 @@ a:focus-visible {
 
 .nav-item.dropdown .dropdown-toggle:hover,
 .nav-item.dropdown .dropdown-toggle:focus,
-.nav-item.dropdown .dropdown-toggle:focus-visible {
-  color: var(--color-accent-primary);
+.nav-item.dropdown .dropdown-toggle:focus-visible,
+.nav-item.dropdown .dropdown-toggle:active {
+  color: var(--color-accent);
 }
 
 .nav-item.dropdown .dropdown-menu {
   background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-bg-primary);
+  border: 1px solid var(--color-bg-secondary);
 }
 
 .nav-item.dropdown .dropdown-menu .dropdown-item {
@@ -226,15 +230,26 @@ a:focus-visible {
   transition: background-color var(--transition-default);
 }
 
+.nav-item.dropdown .dropdown-menu .dropdown-item.active {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-active);
+}
+
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover,
-.nav-item.dropdown .dropdown-menu .dropdown-item:focus {
-  background-color: var(--color-bg-primary);
-  color: var(--color-accent-primary);
+.nav-item.dropdown .dropdown-menu .dropdown-item:focus,
+.nav-item.dropdown .dropdown-menu .dropdown-item:focus-visible,
+.nav-item.dropdown .dropdown-menu .dropdown-item:active,
+.nav-item.dropdown .dropdown-menu .dropdown-item.active:hover,
+.nav-item.dropdown .dropdown-menu .dropdown-item.active:focus,
+.nav-item.dropdown .dropdown-menu .dropdown-item.active:focus-visible,
+.nav-item.dropdown .dropdown-menu .dropdown-item.active:active {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-accent);
 }
 
 .nav-item.dropdown .dropdown-menu .dropdown-item:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 
@@ -254,7 +269,7 @@ a:focus-visible {
 
 #menuToggle:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 /* ==============================
@@ -376,7 +391,7 @@ fieldset legend.form-label {
 
 /* Required asterisk */
 .required-asterisk {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
 }
 
 /* Input fields, checkboxes, and form controls */
@@ -474,12 +489,12 @@ footer a:hover,
 footer a:focus,
 footer a:focus-visible,
 footer a:active {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
 }
 
 footer a:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+  box-shadow: 0 0 0 0.125rem var(--color-accent);
 }
 
 #copyright {
