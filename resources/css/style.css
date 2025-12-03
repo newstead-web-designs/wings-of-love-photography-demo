@@ -373,6 +373,12 @@ a:focus-visible {
   object-position: center;
 }
 
+.carousel button:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 
 /* =======================
    Contact Form
