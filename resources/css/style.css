@@ -7,7 +7,7 @@
   --font-heading: "Playfair Display", Garamond, 'Times New Roman', Times, serif;
 
   /* Font Sizes */
-  --font-size-body: 18px; /* Default 16px */
+  --font-size-body: 16px; /* Default 16px */
   --font-size-h1: 2rem; /* Default 2rem */
   --font-size-h2: 1.5rem; /* Default 1.5rem */
   --font-size-h3: 1.3rem; /* Default 1.3rem */
@@ -338,13 +338,8 @@ a:focus-visible {
 }
 
 .card {
-  font-size: 16px;
   transition: all var(--transition-default);
   will-change: transform;
-}
-
-.card h3 {
-  font-size: 1.3em;
 }
 
 .card:hover {
