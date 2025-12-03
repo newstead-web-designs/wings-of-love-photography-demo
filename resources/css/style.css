@@ -338,8 +338,13 @@ a:focus-visible {
 }
 
 .card {
+  font-size: 16px;
   transition: all var(--transition-default);
   will-change: transform;
+}
+
+.card h3 {
+  font-size: 1.3em;
 }
 
 .card:hover {
