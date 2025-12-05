@@ -522,11 +522,11 @@ footer a:focus-visible {
 }
 
 #copyright {
-  font-size: var(--font-size-h5);
+  font-size: var(--font-size-h4);
 }
 
 #credit {
-  font-size: var(--font-size-h6);
+  font-size: var(--font-size-h5);
 }
 
 /* =======================
