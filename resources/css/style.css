@@ -7,13 +7,20 @@
   --font-heading: "Playfair Display", Garamond, 'Times New Roman', Times, serif;
 
   /* Font Sizes */
-  --font-size-body: 16px; /* Default 16px */
-  --font-size-h1: 2rem; /* Default 2rem */
-  --font-size-h2: 1.5rem; /* Default 1.5rem */
-  --font-size-h3: 1.3rem; /* Default 1.3rem */
-  --font-size-h4: 1rem;  /* Default 1rem */
-  --font-size-h5: 0.83rem; /* Default 0.83rem */
-  --font-size-h6: 0.75rem; /* Default 0.67rem */
+  --font-size-body: 16px;
+  /* Default 16px */
+  --font-size-h1: 2rem;
+  /* Default 2rem */
+  --font-size-h2: 1.5rem;
+  /* Default 1.5rem */
+  --font-size-h3: 1.3rem;
+  /* Default 1.3rem */
+  --font-size-h4: 1rem;
+  /* Default 1rem */
+  --font-size-h5: 0.83rem;
+  /* Default 0.83rem */
+  --font-size-h6: 0.75rem;
+  /* Default 0.67rem */
   --font-size-menu-toggle: 1.75rem;
 
   /* Line Heights */
@@ -28,8 +35,10 @@
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f9f6f0;
   --color-bg-tertiary: #fffcf6;
-  --color-overlay-primary: rgba(249, 246, 240, 0.4); /* #f9f6f0;  */
-  --color-overlay-secondary: rgba(255, 252, 246, 0.6); /* #fffcf6;  */
+  --color-overlay-primary: rgba(249, 246, 240, 0.4);
+  /* #f9f6f0;  */
+  --color-overlay-secondary: rgba(255, 252, 246, 0.6);
+  /* #fffcf6;  */
   --color-accent: #9e4f56;
   --color-active: #7a5f62;
 }
@@ -368,6 +377,15 @@ a:focus-visible {
   object-position: center;
 }
 
+.carousel button {
+  color: var(--color-brand-primary);
+}
+
+.carousel button:hover {
+  transition: none;
+  transform: none;
+}
+
 .carousel button:focus {
   outline: none;
   box-shadow: none;
@@ -444,7 +462,7 @@ input[type="textarea"]:focus-visible,
    ======================= */
 .summary {
   position: relative;
-   background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
