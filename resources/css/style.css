@@ -109,7 +109,6 @@ a:focus-visible {
    ======================= */
 .btn {
   font-size: var(--font-size-h4);
-  font-weight: var(--font-weight-heading);
   transition: all var(--transition-default);
 }
 
@@ -391,6 +390,63 @@ a:focus-visible {
   box-shadow: none;
   border: none;
 }
+
+/* =======================
+   Accordion Styles
+   ======================= */
+  .accordion-item {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-bg-primary);
+    margin-bottom: 1rem;
+    transition: all var(--transition-default);
+  }
+
+  .accordion-button {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: background-color var(--transition-default), color var(--transition-default);
+  }
+
+  .accordion-button::after {
+    transition: transform var(--transition-default) ease, filter var(--transition-default), color var(--transition-default);
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-brand-secondary);
+    box-shadow: none;
+  }
+
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: var(--color-bg-secondary);
+  }
+
+  .accordion-button:hover::after,
+  .accordion-button:focus::after {
+    filter: brightness(1.3);
+  }
+
+  .accordion-body {
+    line-height: var(--line-height-default);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+
+  .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .accordion-button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 0.125rem var(--color-brand-primary);
+  }
 
 
 /* =======================
